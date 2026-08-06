@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Encontre seu novo lar em BH com a Temponi Imobiliária. Ecossistema de benefícios, descontos em decoração e suporte completo até depois das chaves." />
+  <title>Temponi Imobiliária | Comprar ou Alugar Seu Imóvel em BH</title>
+  <script type="module" src="./src/js/main.js"></script>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+  <header class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-transparent">
+    <nav class="container-section flex items-center justify-between h-20">
+      <a href="#hero" class="flex items-center">
+        <img src="./src/assets/logo imobiliaria temponi.png" alt="Temponi Imobiliária"
+          class="h-16 md:h-20 lg:h-28 w-auto object-contain">
+      </a>
+
+      <!-- Alterado de md: para lg: -->
+      <div class="hidden lg:flex items-center gap-8">
+        <a href="#experiencia" class="nav-link">A experiência</a>
+        <a href="#beneficios" class="nav-link">Benefícios</a>
+        <a href="#buscar" class="nav-link">Buscar imóveis</a>
+      </div>
+
+      <!-- Alterado de md: para lg: -->
+      <a href="#buscar" class="hidden lg:inline-flex btn-primary !px-6 !py-3 !text-sm">
+        Ver Imóveis Disponíveis
+      </a>
+
+      <!-- Botão Mobile - Alterado para lg:hidden -->
+      <button data-nav-toggle aria-expanded="false" aria-label="Abrir menu"
+        class="lg:hidden w-11 h-11 rounded-lg border border-slate-200 flex items-center justify-center text-slate-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Menu Mobile - Alterado de md:hidden para lg:hidden -->
+    <div data-nav-menu
+      class="hidden lg:hidden flex-col container-section pb-6 gap-3 bg-white/95 backdrop-blur-md border-t border-slate-100">
+      <a href="#experiencia" class="py-2 nav-link">A experiência</a>
+      <a href="#beneficios" class="py-2 nav-link">Benefícios</a>
+      <a href="#buscar" class="py-2 nav-link">Buscar imóveis</a>
+      <a href="#buscar" class="btn-primary !px-5 !py-3 !text-sm mt-2 w-full">Ver Imóveis Disponíveis</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="hero" class="relative hero-gradient-clientes pt-32 pb-20 lg:pt-40 lg:pb-32 overflow-hidden">
+      <div class="absolute inset-0 bg-pattern-dots opacity-30 pointer-events-none"></div>
+      <div
+        class="absolute -top-24 -left-20 w-[28rem] h-[28rem] rounded-full bg-orange-300/20 blur-3xl pointer-events-none animate-float">
+      </div>
+      <div
+        class="absolute -bottom-20 -right-20 w-[24rem] h-[24rem] rounded-full bg-blue-200/40 blur-3xl pointer-events-none">
+      </div>
+
+      <div class="container-section relative">
+        <div class="grid lg:grid-cols-2 gap-14 items-center">
+          <div class="space-y-8">
+            <div class="reveal opacity-0">
+              <span class="badge bg-emerald-100 text-emerald-700 gap-2">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6">
+                  </path>
+                </svg>
+                Experiência Minha Casa Nova · BH
+              </span>
+            </div>
+
+            <h1
+              class="reveal opacity-0 delay-100 text-4xl sm:text-5xl lg:text-6xl font-bold font-display text-temponi-900 leading-[1.08]">
+              Mudar de casa em BH pode — e deve — ser <span class="text-emerald-600">sem estresse</span>.
+              <svg class="mt-2 w-48 h-4 text-emerald-300" viewBox="0 0 300 12" preserveAspectRatio="none">
+                <path d="M0 8 Q 75 0 150 6 T 300 4" stroke="currentColor" stroke-width="4" fill="none"
+                  stroke-linecap="round" />
+              </svg>
+            </h1>
+
+            <p class="reveal opacity-0 delay-200 text-lg sm:text-xl text-temponi-600 max-w-2xl leading-relaxed">
+              Encontre seu novo lar com a Temponi e ganhe acesso a um ecossistema de conveniências,
+              <strong class="text-temponi-800">descontos em decoração</strong> e suporte completo até depois da entrega
+              das chaves.
+            </p>
+
+            <div class="reveal opacity-0 delay-300 flex flex-col sm:flex-row gap-4 pt-2">
+              <a href="#buscar" class="btn-primary text-center">
+                Ver Imóveis Disponíveis
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </a>
+              <a href="#beneficios" class="btn-secondary text-center">
+                Ver todos os benefícios
+              </a>
+            </div>
+
+            <div class="reveal opacity-0 delay-400 grid grid-cols-3 gap-4 pt-8 border-t border-emerald-100/60">
+              <div>
+                <div class="font-display text-3xl font-bold text-temponi-900">2.000<span
+                    class="text-emerald-500">+</span></div>
+                <div class="text-sm text-temponi-500 mt-1">Famílias realizadas</div>
+              </div>
+              <div>
+                <div class="font-display text-3xl font-bold text-temponi-900">50<span class="text-emerald-500">+</span>
+                </div>
+                <div class="text-sm text-temponi-500 mt-1">Parceiros Temponi Help</div>
+              </div>
+              <div>
+                <div class="font-display text-3xl font-bold text-temponi-900">48<span class="text-emerald-500">h</span>
+                </div>
+                <div class="text-sm text-temponi-500 mt-1">Atendimento pós-chaves</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal opacity-0 delay-200 relative">
+            <div
+              class="relative rounded-3xl overflow-hidden shadow-2xl shadow-emerald-900/10 border border-temponi-100">
+              <img src="./src/assets/apartamento-com-ou-sem-varanda-as-vantagens-de-cada-um-thumbnail.webp"
+                alt="Sala aconchegante de um novo lar em BH" class="w-full h-[520px] object-cover" loading="lazy" />
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent"></div>
+
+              <!-- Badge preservada, sem quebrar limites -->
+              <div
+                class="absolute top-6 left-6 px-4 py-2 bg-white/95 backdrop-blur rounded-full shadow-lg flex items-center gap-2">
+                <svg class="w-4 h-4 text-emerald-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                    clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm font-semibold text-slate-800">Apto. 2 suítes · Luxemburgo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="hidden lg:block absolute -right-6 top-24 bg-white rounded-2xl shadow-xl p-4 border border-temponi-100 w-60">
+          <div class="flex items-center gap-3">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center flex-shrink-0">
+              <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+              </svg>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-temponi-900">15% OFF</p>
+              <p class="text-xs text-temponi-500">na sua mobília nova</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+    </section>
+
+    <section id="experiencia" class="relative py-24 lg:py-32 overflow-hidden">
+      <div class="container-section">
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+          <div class="reveal opacity-0 order-2 lg:order-1 relative">
+            <div class="relative">
+              <div
+                class="absolute -top-6 -left-6 w-full h-full bg-gradient-to-br from-emerald-200 to-blue-200 rounded-3xl opacity-30 blur-sm">
+              </div>
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-white/50">
+                <img src="./src/assets/apartamento-com-ou-sem-varanda-as-vantagens-de-cada-um-thumbnail.webp"
+                  alt="Imagem temporária do novo lar" class="w-full h-[560px] object-cover" loading="lazy" />
+              </div>
+              <div
+                class="absolute -bottom-6 -right-6 bg-white rounded-3xl p-6 shadow-2xl border border-temponi-100 max-w-[260px]">
+                <div class="flex items-center justify-between mb-3">
+                  <div class="flex -space-x-2">
+                    <div class="w-8 h-8 rounded-full bg-gradient-to-br from-pink-400 to-pink-600 border-2 border-white">
+                    </div>
+                    <div
+                      class="w-8 h-8 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 border-2 border-white">
+                    </div>
+                    <div
+                      class="w-8 h-8 rounded-full bg-gradient-to-br from-emerald-400 to-teal-500 border-2 border-white">
+                    </div>
+                  </div>
+                  <span class="text-xs font-semibold text-emerald-600 bg-emerald-50 px-2 py-1 rounded-full">4.9/5</span>
+                </div>
+                <p class="text-sm text-temponi-700 leading-relaxed">
+                  "Tudo que precisávamos — desde o eletricista até o desconto na loja de decoração."
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reveal opacity-0 delay-100 order-1 lg:order-2 space-y-8">
+            <span class="badge bg-blue-50 text-blue-700">
+              <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
+                </path>
+              </svg>
+              Experiência Completa
+            </span>
+
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-temponi-900 leading-tight">
+              Nós não te entregamos só a <span class="text-emerald-600">chave</span>.
+            </h2>
+
+            <div class="relative my-4">
+              <div class="absolute inset-0 flex items-center">
+                <div class="w-full border-t-2 border-dashed border-emerald-300"></div>
+              </div>
+            </div>
+
+            <p class="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-emerald-600 leading-tight">
+              Entregamos o seu novo começo</span>.
+            </p>
+
+            <div
+              class="pt-4 p-6 bg-gradient-to-br from-orange-50 via-rose-50 to-amber-50 border border-orange-100 rounded-2xl">
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z">
+                    </path>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-temponi-900 mb-2">
+                    Sabe aquela raiva de mudar de casa?
+                  </p>
+                  <p class="text-temponi-700 leading-relaxed">
+                    Ter que sair procurando <strong>eletricista, montador de móveis, pintor</strong> e ainda gastar uma
+                    fortuna em lojas de utilidades?
+                    <br /><br />
+                    <strong class="text-temponi-900">Na Imobiliária Temponi, você não passa por isso.</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4 pt-2">
+              <div class="flex -space-x-3">
+                <div
+                  class="w-11 h-11 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 border-3 border-white shadow-sm">
+                </div>
+                <div
+                  class="w-11 h-11 rounded-full bg-gradient-to-br from-sky-400 to-blue-600 border-3 border-white shadow-sm">
+                </div>
+                <div
+                  class="w-11 h-11 rounded-full bg-gradient-to-br from-rose-400 to-pink-600 border-3 border-white shadow-sm">
+                </div>
+                <div
+                  class="w-11 h-11 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 border-3 border-white shadow-sm">
+                </div>
+              </div>
+              <div>
+                <div class="flex text-amber-500 text-sm">★★★★★</div>
+                <p class="text-sm text-temponi-600 font-medium">+2.000 lares entregues</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="beneficios"
+      class="relative py-24 lg:py-32 bg-gradient-to-b from-blue-50/60 via-white to-white overflow-hidden">
+      <div class="absolute top-20 right-10 w-72 h-72 bg-emerald-200/20 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="container-section relative">
+        <div class="max-w-3xl mx-auto text-center mb-16 lg:mb-20">
+          <div class="reveal opacity-0">
+            <span class="badge bg-emerald-100 text-emerald-700">
+              <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7">
+                </path>
+              </svg>
+              Clube de Vantagens Exclusivo
+            </span>
+          </div>
+          <h2
+            class="reveal opacity-0 delay-100 text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-temponi-900 leading-tight mt-6 mb-6">
+            O que te espera na sua <span class="text-emerald-600">nova casa</span>:
+          </h2>
+          <p class="reveal opacity-0 delay-200 text-lg sm:text-xl text-temponi-600 max-w-3xl mx-auto leading-relaxed">
+            São benefícios pensados do primeiro dia até muito depois da mudança, para você só se preocupar com o que
+            importa:
+            viver bem em BH.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <article
+            class="reveal opacity-0 relative bg-white rounded-3xl p-8 border border-temponi-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 overflow-hidden">
+            <div
+              class="absolute top-0 right-0 w-40 h-40 bg-blue-100/40 rounded-bl-full -translate-y-1/4 translate-x-1/4">
+            </div>
+            <div class="relative">
+              <div
+                class="inline-flex items-center px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-6">
+                Benefício 01
+              </div>
+              <div
+                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-100 to-blue-200 text-blue-600 flex items-center justify-center mb-6 shadow-md shadow-blue-200/50">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="font-display text-2xl font-bold text-temponi-900 mb-4">
+                Temponi <span class="text-blue-600">Help</span>
+              </h3>
+              <p class="text-sm font-semibold text-blue-600 uppercase tracking-wider mb-3">
+                Parceiros de Confiança
+              </p>
+              <p class="text-temponi-600 leading-relaxed mb-6">
+                Precisou de <strong>reparos, marido de aluguel ou instalação</strong> na primeira semana?
+                Acesse nosso canal exclusivo de profissionais homologados e com atendimento prioritário.
+              </p>
+              <ul class="space-y-3">
+                <li class="flex items-start gap-3 text-sm text-temponi-700">
+                  <span class="w-6 h-6 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-3.5 h-3.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  Eletricistas, encanadores, pintores
+                </li>
+                <li class="flex items-start gap-3 text-sm text-temponi-700">
+                  <span class="w-6 h-6 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-3.5 h-3.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  Montador de móveis incluso 7 dias
+                </li>
+                <li class="flex items-start gap-3 text-sm text-temponi-700">
+                  <span class="w-6 h-6 rounded-lg bg-blue-100 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <svg class="w-3.5 h-3.5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </span>
+                  Profissionais homologados e garantidos
+                </li>
+              </ul>
+            </div>
+          </article>
+
+          <article
+            class="reveal opacity-0 delay-100 relative bg-white rounded-3xl p-8 lg:-translate-y-4 border-2 border-emerald-200 shadow-2xl shadow-emerald-500/10 overflow-hidden">
+            <div
+              class="absolute -top-3 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full bg-gradient-to-r from-emerald-500 to-emerald-600 text-white text-xs font-bold shadow-lg shadow-emerald-500/30 z-10">
+              MAIS AMADO ★
+            </div>
+            <div
+              class="absolute top-0 right-0 w-40 h-40 bg-emerald-100/50 rounded-bl-full -translate-y-1/4 translate-x-1/4">
+            </div>
+            <div class="relative">
+              <div
+                class="inline-flex items-center px-3 py-1 rounded-full bg-emerald-100 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-6">
+                Benefício 02
+              </div>
+              <div
+                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-100 to-emerald-200 text-emerald-600 flex items-center justify-center mb-6 shadow-md shadow-emerald-200/50">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
+                  </path>
+                </svg>
+              </div>
+              <h3 class="font-display text-2xl font-bold text-temponi-900 mb-4">
+                Clube de Benefícios <span class="text-emerald-600">"Minha Casa Nova"</span>
+              </h3>
+              <p class="text-sm font-semibold text-emerald-600 uppercase tracking-wider mb-3">
+                Condições Especiais em BH
+              </p>
+              <p class="text-temponi-600 leading-relaxed mb-6">
+                <strong>Condições e descontos especiais</strong> em parceiros locais de BH para móveis, decoração,
+                iluminação e acabamentos.
+              </p>
+              <div class="grid grid-cols-2 gap-3">
+                <div class="p-3 rounded-xl bg-gradient-to-br from-rose-50 to-pink-50 border border-rose-100">
+                  <p class="text-2xl font-display font-bold text-rose-600">20% OFF</p>
+                  <p class="text-xs text-temponi-600 mt-0.5">Decoração & Utilidades</p>
+                </div>
+                <div class="p-3 rounded-xl bg-gradient-to-br from-amber-50 to-yellow-50 border border-amber-100">
+                  <p class="text-2xl font-display font-bold text-amber-600">15% OFF</p>
+                  <p class="text-xs text-temponi-600 mt-0.5">Móveis planejados</p>
+                </div>
+                <div
+                  class="p-3 rounded-xl bg-gradient-to-br from-violet-50 to-purple-50 border border-violet-100 col-span-2">
+                  <p class="text-sm font-semibold text-temponi-800">+50 parceiros em toda BH</p>
+                  <p class="text-xs text-temponi-500 mt-0.5">Economia média de R$ 3.500 por cliente</p>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="reveal opacity-0 delay-200 relative bg-white rounded-3xl p-8 border border-temponi-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 overflow-hidden">
+            <div
+              class="absolute top-0 right-0 w-40 h-40 bg-amber-100/40 rounded-bl-full -translate-y-1/4 translate-x-1/4">
+            </div>
+            <div class="relative">
+              <div
+                class="inline-flex items-center px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-xs font-bold uppercase tracking-wider mb-6">
+                Benefício 03
+              </div>
+              <div
+                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-100 to-rose-100 text-rose-500 flex items-center justify-center mb-6 shadow-md shadow-amber-200/50">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                </svg>
+              </div>
+              <h3 class="font-display text-2xl font-bold text-temponi-900 mb-4">
+                Experiência Unboxing <span class="text-rose-500">"Memórias"</span>
+              </h3>
+              <p class="text-sm font-semibold text-rose-500 uppercase tracking-wider mb-3">
+                A sua primeira manhã inesquecível
+              </p>
+              <p class="text-temponi-600 leading-relaxed mb-6">
+                Ao fechar seu contrato, você recebe sua chave acompanhada da nossa
+                <strong>caixa sensorial exclusiva</strong> com a fragrância e o café da nossa terra,
+                para celebrar o primeiro dia do seu novo capítulo.
+              </p>
+              <div
+                class="bg-gradient-to-br from-rose-50 via-amber-50 to-orange-50 rounded-2xl p-5 border border-rose-100">
+                <p class="text-xs font-bold text-rose-600 uppercase tracking-wider mb-3">
+                  Na Caixa Memórias você encontra:
+                </p>
+                <div class="flex items-center gap-3 flex-wrap text-sm text-temponi-700">
+                  <span
+                    class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white rounded-lg shadow-sm border border-rose-100">
+                    ☕ Café mineiro especial
+                  </span>
+                  <span
+                    class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white rounded-lg shadow-sm border border-rose-100">
+                    🌸 Difusor aromático
+                  </span>
+                  <span
+                    class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white rounded-lg shadow-sm border border-rose-100">
+                    📸 Polaroid do seu lar
+                  </span>
+                  <span
+                    class="inline-flex items-center gap-1.5 px-2.5 py-1 bg-white rounded-lg shadow-sm border border-rose-100">
+                    💌 Carta da equipe
+                  </span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="buscar" class="relative py-24 lg:py-32 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950 to-emerald-950"></div>
+      <div
+        class="absolute top-0 left-0 w-[500px] h-[500px] bg-emerald-500/10 rounded-full blur-3xl -translate-y-1/3 -translate-x-1/3">
+      </div>
+      <div
+        class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-3xl translate-y-1/3 translate-x-1/3">
+      </div>
+
+      <div class="container-section relative">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="reveal opacity-0">
+            <span class="badge bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+              <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+              Comece agora sua busca
+            </span>
+          </div>
+
+          <h2
+            class="reveal opacity-0 delay-100 font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.08] mt-8 mb-6">
+            Pronto para encontrar <br class="hidden sm:block" /> seu <span class="text-emerald-400">espaço</span> em BH?
+          </h2>
+
+          <p class="reveal opacity-0 delay-200 text-lg text-blue-100/80 max-w-2xl mx-auto mb-12">
+            De apartamentos compactos no centro até casas espaçosas nos bairros mais queridos.
+            Tem um lar Temponi esperando por você.
+          </p>
+
+          <!--           <div
+            class="reveal opacity-0 delay-300 bg-white/95 backdrop-blur-sm rounded-3xl p-3 sm:p-4 shadow-2xl shadow-black/40 border border-white/10 max-w-4xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-3">
+              <div class="flex-1 flex items-center gap-3 px-5 py-4 bg-slate-50 rounded-2xl border border-slate-200">
+                <svg class="w-6 h-6 text-slate-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <input type="text" placeholder="Bairro ou região em BH (ex.: Savassi, Pampulha, Lourdes)"
+                  class="flex-1 bg-transparent outline-none text-temponi-800 placeholder:text-temponi-400" />
+              </div>
+              <select
+                class="px-5 py-4 bg-slate-50 rounded-2xl border border-slate-200 text-temponi-800 outline-none font-medium min-w-[160px]">
+                <option>Tipo do imóvel</option>
+                <option>Apartamento</option>
+                <option>Casa</option>
+                <option>Studio / Loft</option>
+                <option>Cobertura</option>
+              </select>
+              <select
+                class="px-5 py-4 bg-slate-50 rounded-2xl border border-slate-200 text-temponi-800 outline-none font-medium min-w-[140px]">
+                <option>Comprar</option>
+                <option>Alugar</option>
+                <option>Tanto faz</option>
+              </select>
+            </div>
+          </div>
+        -->
+          <div class="reveal opacity-0 delay-400 mt-10">
+            <a href="#"
+              class="inline-flex items-center justify-center px-10 py-5 text-lg font-semibold text-white bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-2xl shadow-2xl shadow-emerald-500/30 hover:from-emerald-600 hover:to-emerald-700 hover:shadow-emerald-500/50 transform hover:-translate-y-0.5 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-emerald-400/50">
+              Buscar Meu Imóvel Agora
+              <svg class="w-6 h-6 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </a>
+          </div>
+          <!-- 
+          <div
+            class="reveal opacity-0 delay-500 mt-12 flex flex-wrap justify-center gap-x-10 gap-y-4 text-blue-100/60 text-sm">
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Busca personalizada
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              100% gratuito
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Sem compromisso
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Atendimento em 24h
+            </div>
+          </div>-->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-slate-950 text-blue-100/70 py-14">
+    <div class="container-section">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6 pb-8 border-b border-slate-800">
+        <div class="flex items-center gap-4">
+          <img src="./src/assets/logo imobiliaria temponi.png" alt="Temponi Imobiliária"
+            class="h-16 md:h-20 lg:h-24 w-auto object-contain">
+        </div>
+        <div class="flex flex-wrap gap-4 text-sm">
+          <a href="#hero" class="hover:text-emerald-400 transition">Comprar & Alugar</a>
+          <span class="text-slate-700">·</span>
+          <a href="#beneficios" class="hover:text-emerald-400 transition">Benefícios</a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pt-8 text-sm">
+        <p>© 2026 Temponi Imobiliária. Todos os direitos reservados.</p>
+        <p class="text-slate-500">Belo Horizonte · Minas Gerais · Coração Mineiro</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

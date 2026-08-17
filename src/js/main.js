@@ -31,6 +31,63 @@ if (typeof Lenis !== 'undefined') {
   });
 }
 
+function initHeaderScroll() {
+  const header = document.querySelector('header')
+  const logo = document.getElementById('header-logo')
+  const desktopNavLinks = document.querySelectorAll('#desktop-nav .nav-link')
+  const mobileBtn = document.getElementById('mobile-menu-btn')
+
+  if (!header) return
+
+  const onScroll = () => {
+    if (window.scrollY > 20) {
+      // ===== 1. MODO SCROLL (Fundo Branco Ativado) =====
+      header.classList.add('shadow-lg', 'bg-white/95', 'backdrop-blur-md')
+      header.classList.remove('bg-transparent')
+
+      // Remove os filtros da logo para ela voltar a ser Dourada e Escura
+      if (logo) logo.classList.remove('brightness-0', 'invert')
+
+      // Transforma os links de navegação em cinza escuro
+      desktopNavLinks.forEach(link => {
+        link.classList.remove('text-white')
+        link.classList.add('text-slate-600')
+      })
+
+      // Transforma o botão mobile (hamburguer) em cinza escuro
+      if (mobileBtn) {
+        mobileBtn.classList.remove('text-white', 'border-white/30')
+        mobileBtn.classList.add('text-slate-700', 'border-slate-200')
+      }
+
+    } else {
+      // ===== 2. MODO TOPO (Fundo Transparente) =====
+      header.classList.remove('shadow-lg', 'bg-white/95', 'backdrop-blur-md')
+      header.classList.add('bg-transparent') // Garante o fundo transparente
+
+      // Adiciona os filtros na logo para ela ficar 100% branca
+      if (logo) logo.classList.add('brightness-0', 'invert')
+
+      // Retorna os links de navegação para a cor branca
+      desktopNavLinks.forEach(link => {
+        link.classList.remove('text-slate-600')
+        link.classList.add('text-white')
+      })
+
+      // Retorna o botão mobile para a cor branca
+      if (mobileBtn) {
+        mobileBtn.classList.remove('text-slate-700', 'border-slate-200')
+        mobileBtn.classList.add('text-white', 'border-white/30')
+      }
+    }
+  }
+
+  window.addEventListener('scroll', onScroll, { passive: true })
+
+  // Executa uma vez logo que a página carrega para garantir as cores iniciais
+  onScroll()
+}
+
 const yearSpan = document.getElementById('currentYear');
 if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
@@ -104,21 +161,4 @@ function initMobileNav() {
       menu.classList.remove('flex')
     })
   })
-}
-
-function initHeaderScroll() {
-  const header = document.querySelector('header')
-  if (!header) return
-
-  const onScroll = () => {
-    if (window.scrollY > 20) {
-      header.classList.add('shadow-lg', 'bg-white/95', 'backdrop-blur-md')
-      header.classList.remove('bg-transparent')
-    } else {
-      header.classList.remove('shadow-lg', 'bg-white/95', 'backdrop-blur-md')
-    }
-  }
-
-  window.addEventListener('scroll', onScroll, { passive: true })
-  onScroll()
 }
